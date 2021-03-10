@@ -10,3 +10,18 @@ add png
 https://juejin.cn/post/6844903648237977614
 
 add css/scss/less
+
+> You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders
+
+https://webpack.docschina.org/loaders/#files
+
+Loaders
+https://webpack.docschina.org/loaders/#files
+
+yarn add -D css-loader style-loader
+
+require("!style-loader!css-loader!./style.css");
+
+//addvanced
+
+yarn add -D less less-loader

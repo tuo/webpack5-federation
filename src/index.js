@@ -1,4 +1,4 @@
-import "./style.scss";
+import "./style.less";
 
 // import * as camelCase from "../node_modules/lodash/camelCase.js";
 import { sum } from "./sum.js";

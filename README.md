@@ -29,3 +29,11 @@ yarn add -D less less-loader
 -   add bundle analzyer
 
 http://127.0.0.1:8888
+
+-   added dev server
+
+yarn add -D webpack-dev-server
+
+出现 404
+
+> localhost/:11 GET http://localhost:9000/dist/main.js

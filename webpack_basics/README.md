@@ -146,3 +146,9 @@ https://webpack.docschina.org/guides/code-splitting/#dynamic-imports
     Warning
     import() 调用会在内部用到 promises。如果在旧版本浏览器中（例如，IE 11）使用 import()，记得使用一个 polyfill 库（例如 es6-promise 或 promise-polyfill），来 shim Promise。
     在我们开始之前，先从上述示例的配置中移除掉多余的 entry 和 optimization.splitChunks，因为接下来的演示中并不需要它们：
+
+### npx webpack --profile --json > stats.json
+
+npx webpack --profile --json > stats.json
+
+http://webpack.github.io/analyse/#modules

@@ -25,3 +25,7 @@ require("!style-loader!css-loader!./style.css");
 //addvanced
 
 yarn add -D less less-loader
+
+-   add bundle analzyer
+
+http://127.0.0.1:8888

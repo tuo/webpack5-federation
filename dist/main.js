@@ -1,0 +1,1 @@
+(()=>{"use strict";const o=(o,s)=>o+s;console.log("hell index.js sum: "+o(2,4)),console.log("5 + 10 "+o(5,10))})();

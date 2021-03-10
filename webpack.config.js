@@ -1,11 +1,12 @@
 const path = require("path");
+const webpack = require("webpack");
 const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
     .BundleAnalyzerPlugin;
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-    entry: "./src/index.js",
-    // mode: "development",
+    entry: ["core-js/stable/promise", "./src/index.js"],
+    mode: "development",
     // devtool: "source-map",
     output: {
         filename: "main.js",
@@ -31,7 +32,11 @@ module.exports = {
             },
         ],
     },
-    plugins: [new BundleAnalyzerPlugin(), new HtmlWebpackPlugin()],
+    plugins: [
+        // new BundleAnalyzerPlugin(),
+
+        new HtmlWebpackPlugin(),
+    ],
     devServer: {
         contentBase: path.join(__dirname, "public"),
         port: 9000,

@@ -131,3 +131,18 @@ package.json 参考了 ant design pro: ELC client
         "last 2 versions",
         "not ie <= 10"
     ],
+
+-   懒加载 lazy loading: https://webpack.js.org/guides/lazy-loading/
+    https://webpack.docschina.org/guides/lazy-loading/
+
+> Warning
+> 注意当调用 ES6 模块的 import() 方法（引入模块）时，必须指向模块的 .default 值，因为它才是 promise 被处理后返回的实际的 module 对象。
+
+https://webpack.docschina.org/guides/code-splitting/#dynamic-imports
+
+    动态导入(dynamic import)
+    当涉及到动态代码拆分时，webpack 提供了两个类似的技术。第一种，也是推荐选择的方式是，使用符合 ECMAScript 提案 的 import() 语法 来实现动态导入。第二种，则是 webpack 的遗留功能，使用 webpack 特定的 require.ensure。让我们先尝试使用第一种……
+
+    Warning
+    import() 调用会在内部用到 promises。如果在旧版本浏览器中（例如，IE 11）使用 import()，记得使用一个 polyfill 库（例如 es6-promise 或 promise-polyfill），来 shim Promise。
+    在我们开始之前，先从上述示例的配置中移除掉多余的 entry 和 optimization.splitChunks，因为接下来的演示中并不需要它们：

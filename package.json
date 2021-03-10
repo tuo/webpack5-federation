@@ -14,7 +14,17 @@
     "lodash": "^4.17.21",
     "lodash-es": "^4.17.21"
   },
+
+
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 10"
+  ],
   "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "babel-loader": "^8.2.2",
     "css-loader": "^5.1.1",
     "html-webpack-plugin": "^5.3.1",
     "less": "^4.1.1",

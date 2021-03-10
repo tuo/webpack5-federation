@@ -92,3 +92,42 @@ https://stackoverflow.com/questions/35250500/correct-way-to-import-lodash
     lodash-es's package.json contains "sideEffects": false, which notifies webpack 4 that all the files inside the package are side effect free (see https://webpack.js.org/guides/tree-shaking/#mark-the-file-as-side-effect-free).
 
     This information is crucial for tree shaking since module bundlers do not tree shake files which possibly contain side effects even if their exported members are not used in anywhere.
+
+https://caniuse.com/es6
+You must use ES2015 imports to load Lodash
+
+但是 IE11 不支持 ECMc205, ES6
+
+https://webpack.docschina.org/guides/getting-started/
+
+    ES2015 中的 import 和 export 语句已经被标准化。虽然大多数浏览器还无法支持它们，但是 webpack 却能够提供开箱即用般的支持。
+
+    事实上，webpack 在幕后会将代码 “转译”，以便旧版本浏览器可以执行。如果你检查 dist/main.js，你可以看到 webpack 具体如何实现，这是独创精巧的设计！除了 import 和 export，webpack 还能够很好地支持多种其他模块语法，更多信息请查看 模块 API。
+
+    注意，webpack 不会更改代码中除 import 和 export 语句以外的部分。如果你在使用其它 ES2015 特性，请确保你在 webpack loader 系统 中使用了一个像是 Babel 或 Bublé 的 transpiler(转译器)。
+
+IE 不兼容 ES6 箭头函数的解决方法（在浏览器中使用）
+
+    (() => {
+        "use strict";
+        console.log("hell 222 index.js sum: " + new Date()),
+            (document.body.innerHTML += `<h1>2+4=${(2, 4, 6)}</h1>`);
+    })();
+
+Loader 主要是用来对文件资源进行转换打包，例如：我们 js 中运用了 es6 的语法，而有的浏览器不支持，我们就可以用 babel 将 es6 的语法转换成浏览器支持的 es5 语法。
+
+babel-loader https://webpack.docschina.org/loaders/babel-loader/
+
+此 package 允许你使用 Babel 和 webpack 转译 JavaScript 文件。
+yarn add -D babel-loader @babel/core @babel/preset-env webpack
+
+什么是 babel-env-preset https://www.cnblogs.com/chyingp/archive/2018/06/05/9137849.html
+https://babeljs.io/docs/en/babel-preset-env/#how-it-works
+
+package.json 参考了 ant design pro: ELC client
+
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "not ie <= 10"
+    ],

@@ -15,6 +15,17 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.m?js$/,
+                exclude: /(node_modules|bower_components)/,
+                use: {
+                    loader: "babel-loader",
+                    options: {
+                        // cacheDirectory: ".babel-cache",
+                        presets: ["@babel/preset-env"],
+                    },
+                },
+            },
+            {
                 test: /\.less$/i,
                 use: ["style-loader", "css-loader", "less-loader"],
             },
@@ -24,5 +35,6 @@ module.exports = {
     devServer: {
         contentBase: path.join(__dirname, "public"),
         port: 9000,
+        host: "0.0.0.0",
     },
 };

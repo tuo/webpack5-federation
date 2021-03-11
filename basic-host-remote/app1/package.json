@@ -15,7 +15,7 @@
   },
   "scripts": {
     "start": "webpack-cli serve",
-    "build": "webpack --mode production",
+    "build": "HOSTNAME=dapper-cart.surge.sh webpack --mode production && surge --domain=taboo-stew.surge.sh dist",
     "serve": "serve dist -p 3001",
     "clean": "rm -rf dist"
   },

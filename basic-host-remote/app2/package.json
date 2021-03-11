@@ -14,7 +14,7 @@
   },
   "scripts": {
     "start": "webpack-cli serve",
-    "build": "webpack --mode production",
+    "build": "webpack --mode production && surge --domain=dapper-cart.surge.sh dist",
     "serve": "serve dist -p 3002",
     "clean": "rm -rf dist"
   },

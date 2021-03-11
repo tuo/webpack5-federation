@@ -12,7 +12,7 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "PORT=3001 react-scripts start",
     "build": "react-scripts build",
     "stats": "react-scripts build --stats && webpack-bundle-analyzer build/bundle-stats.json -m static -r build/bundle-stats.html -O",
     "test": "react-scripts test",

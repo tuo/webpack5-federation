@@ -1,4 +1,6 @@
+console.log("[LOG]-main start");
 import("./bootstrap");
+console.log("[LOG]-main end");
 
 // import React from "react";
 // import ReactDOM from "react-dom";

@@ -26,7 +26,13 @@ module.exports = {
   },
   //http://localhost:3002/remoteEntry.js
   plugins: [
-   
+    // new ModuleFederationPlugin({
+    //   name: "app1",
+    //   remotes: {
+    //     app2: `app2@${getRemoteEntryUrl(3002)}`,
+    //   },
+    //   shared: { react: { singleton: true }, "react-dom": { singleton: true } },
+    // }),
     new HtmlWebpackPlugin({
       template: "./public/index.html",
     }),

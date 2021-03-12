@@ -21,6 +21,7 @@ function App() {
         <div>
             <h1>Basic Host-Remote</h1>
             <h2>App 1</h2>
+            <div class="btn_wrapper">just test</div>
             <Slides />
             {!shown && (
                 <button onClick={() => setShown(!shown)}>

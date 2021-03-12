@@ -1,5 +1,6 @@
 var counter = 3;
 function incCounter() {
+    // this will capture its variable (bedcause it is actaullyed executed in a closure in source code) , all copy of reference to this function will be same and captured varaibles will keep
     console.log("in - counter", counter);
     console.log("in - id", module.id);
     console.log("in - isloaded", module.loaded);

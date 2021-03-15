@@ -1,0 +1,10 @@
+.btn_wrapper {
+    background-color: #2765e2;
+    color: white;
+    padding: 40px;
+    font-family: Arial;
+    text-align: center;
+}
+.btn_wrapper h3 {
+    color: red;
+}

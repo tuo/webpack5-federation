@@ -10,7 +10,7 @@
 -   dynamic import and IE 11 support
 -   webpack5 federation
 -   create react app(bundle) vs vite/snowpack (bundless)
--   react server component/blazor/turbo(hotwire)
+-   react server component/blazor server/turbo(hotwire)
 -   pnpm
 -   how to speed up webpack
 
@@ -23,3 +23,7 @@
 * [Introducing Zero-Bundle-Size React Server Components](https://reactjs.org/blog/2020/12/21/data-fetching-with-react-server-components.html)
 * [Tencent - explore webpack5 federation features](http://www.alloyteam.com/2020/04/14338/)
 * [Understanding ES6 Modules](https://www.sitepoint.com/understanding-es6-modules/)
+* [github - module-federation/module-federation-examples](https://github.com/module-federation/module-federation-examples)
+* [Vite - Next Generation Frontend Tooling](https://vitejs.dev/)
+* [Snowpack - The faster frontend build tool.](https://www.snowpack.dev/)
+

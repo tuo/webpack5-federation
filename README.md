@@ -16,6 +16,7 @@
 
 ### References
 
+* [Martin Fowler - Micro Frontends](https://martinfowler.com/articles/micro-frontends.html)
 * [Webpack 5 Module Federation: A game-changer in JavaScript architecture](indepth.dev/posts/1173/webpack-5-module-federation-a-game-changer-in-javascript-architecture)
 * [# 深入理解 webpack 文件打包机制 #6](https://github.com/happylindz/blog/issues/6)
 * [Webpack 5 Module Federation - Zack Jackson - CityJS Conf 2020](https://www.youtube.com/watch?v=-ei6RqZilYI&ab_channel=Pusher)
@@ -26,4 +27,5 @@
 * [github - module-federation/module-federation-examples](https://github.com/module-federation/module-federation-examples)
 * [Vite - Next Generation Frontend Tooling](https://vitejs.dev/)
 * [Snowpack - The faster frontend build tool.](https://www.snowpack.dev/)
+
 

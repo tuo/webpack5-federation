@@ -11,8 +11,9 @@
 -   webpack5 federation
 -   create react app(bundle) vs vite/snowpack (bundless)
 -   react server component/blazor server/turbo(hotwire)
--   pnpm
+-   ppm
 -   how to speed up webpack
+-   Svelte
 
 ### References
 
